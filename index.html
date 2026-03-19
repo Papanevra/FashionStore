@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<title>Fashion Store</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<a href="index.html">Fashion Store</a>
+</div>
+
+<nav>
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="favorites.html">❤️ Избранное (<span id="fav-count">0</span>)</a>
+<a href="about.html">О нас</a>
+<a href="cart.html">🛒 <span id="cart-count">0</span></a>
+<a href="contacts.html">Контакты</a>
+</nav>
+
+</header>
+
+
+<section class="banner">
+
+<h1>Добро пожаловать в Fashion Store</h1>
+
+<p>Интернет-магазин стильной одежды</p>
+
+<p>Современная одежда для мужчин и женщин. Быстрая доставка и доступные цены.</p>
+
+<a href="catalog.html" class="btn">Перейти в каталог</a>
+
+</section>
+
+
+<section class="popular">
+
+<h2>Популярные товары</h2>
+
+<div class="products">
+
+<a href="catalog.html" class="product">
+<img src="images/shirt.jpg">
+<h3>Футболка</h3>
+<p>1500 ₽</p>
+</a>
+
+<a href="catalog.html" class="product">
+<img src="images/jacket.jpg">
+<h3>Куртка</h3>
+<p>4500 ₽</p>
+</a>
+
+<a href="catalog.html" class="product">
+<img src="images/jeans.jpg">
+<h3>Джинсы</h3>
+<p>3000 ₽</p>
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Fashion Store</p>
+
+</footer>
+<div id="notification"></div>
+
+<!-- КНОПКА ЧАТА -->
+<div id="support-button">
+💬
+<span id="chat-badge">1</span>
+</div>
+
+<!-- ОКНО ЧАТА -->
+<div id="support-chat">
+
+<div class="chat-header">
+Поддержка
+<span id="close-chat">✖</span>
+</div>
+
+<div class="chat-body">
+<p>Здравствуйте! Чем можем помочь?</p>
+<div class="quick-buttons">
+<button onclick="quickMsg('доставка')">🚚 Доставка</button>
+<button onclick="quickMsg('цена')">💰 Цены</button>
+<button onclick="quickMsg('заказ')">📦 Заказ</button>
+</div>
+</div>
+
+<div class="chat-input">
+<input type="text" id="chat-message" placeholder="Введите сообщение...">
+<button onclick="sendMessage()">➤</button>
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

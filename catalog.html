@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<title>Каталог</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<a href="index.html">Fashion Store</a>
+</div>
+
+<nav>
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="favorites.html">❤️ Избранное (<span id="fav-count">0</span>)</a>
+<a href="about.html">О нас</a>
+<a href="cart.html">🛒 <span id="cart-count">0</span></a>
+<a href="contacts.html">Контакты</a>
+</nav>
+
+</header>
+
+<div class="filters">
+
+<input type="text" id="search" placeholder="🔍 Поиск товара...">
+
+<select id="filter">
+<option value="all">Все товары</option>
+<option value="tshirt">Футболки</option>
+<option value="jacket">Куртки</option>
+<option value="jeans">Джинсы</option>
+<option value="hoodie">Худи</option>
+</select>
+
+</div>
+
+
+
+<h1>Каталог товаров</h1>
+
+<div id="products" class="products"></div>
+
+<div id="notification"></div>
+
+<!-- КНОПКА ЧАТА -->
+<div id="support-button">
+💬
+<span id="chat-badge">1</span>
+</div>
+
+<!-- ОКНО ЧАТА -->
+<div id="support-chat">
+
+<div class="chat-header">
+Поддержка
+<span id="close-chat">✖</span>
+</div>
+
+<div class="chat-body">
+<p>Здравствуйте! Чем можем помочь?</p>
+<div class="quick-buttons">
+<button onclick="quickMsg('доставка')">🚚 Доставка</button>
+<button onclick="quickMsg('цена')">💰 Цены</button>
+<button onclick="quickMsg('заказ')">📦 Заказ</button>
+</div>
+</div>
+
+<div class="chat-input">
+<input type="text" id="chat-message" placeholder="Введите сообщение...">
+<button onclick="sendMessage()">➤</button>
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+<script>
+console.log("SCRIPT WORKS");
+</script>
+
+</body>
+</html>
